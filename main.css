@@ -1,0 +1,163 @@
+:root {
+    --accent-color: #f5a841;
+}
+section [class^="container"] {
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 1024px){
+    section [class^="container"] {
+        padding: 3rem;
+    }
+    nav [class^="container"] {
+        padding: 0 3rem;
+    }
+}
+
+section:not(:first-of-type) {
+    text-align: center;
+}
+
+section:nth-child(2n) {
+    background-color: #ecf2ff;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    color: var(--accent-color);
+    transition: all 0.4s;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #ffffff;
+}
+.navbar-nav .nav-link{
+    color: #000000;
+    font-size: 1.1rem;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--accent-color);
+    transition: all 0.3s;
+}
+
+.btn-outline-dark {
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+}
+
+.btn-outline-dark:hover {
+    box-shadow: 4px 4px var(--accent-color);
+    transition: all 0.4s;
+
+}
+@media screen and (min-width: 1024px) {
+
+    .navbar-nav .nav-item {
+        padding: 0 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* HERO */
+section.hero {
+    background-color: #ecf2ff;
+    padding-top: 72px;
+    /* text-align: justify;  */
+}
+
+@media screen and(max-width: 576px){
+    section.hero {
+        text-align: center;
+    }
+    section.hero img {
+        width: 70%;
+    }
+}
+
+/* EDUCATIONS */
+section.education i {
+    font-size: 2rem;
+    margin: 1rem auto 0;
+    border: 2px solid black;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+
+}
+
+section.education .card{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    max-width: 22rem;
+    min-width: 15rem;
+    height: 19rem;
+    margin-inline: auto;
+
+}
+
+/* ABOUT */
+section.about .container {
+    width: 60%;
+}
+
+/* SKILLS */
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(100%  ); /* Default grayscale */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skill-icon:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  @media (max-width: 768px) {
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+   
+
+/* PROJECT */
+section.project .card {
+    max-width: 25rem;
+    width: 100%;
+    height: auto;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px #000000;
+    margin-inline: auto;
+    text-align: left;
+    justify-content: space-between;
+}
+
+section.project .card img {
+    max-width: 95%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+section.project .row > div {
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact */
+
+section.contact .social-media a{
+    padding: 0 0.5rem;
+    font-size: 1.3rem;
+}
+
